@@ -1,27 +1,92 @@
 body{
-    background-image:linear-gradient(to right, #1c1c1c, #8b2323);
+    background-color:#7e1313;
+    margin-top: 50px;
+    font-family: 'Comic Neue';
+    background-image: url(Imagens/bg.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+main{
+    height: 100vh;
 }
 header{
     text-align: center;
     color: white;
+    animation: tit 1s ease;
 }
 .pesquisa{
     text-align: center;
+    input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 0px 20px 20px 20px;
+    box-sizing: border-box;
+    background-image: url(Imagens/lupa.png);
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+    }
 }
 .nenc{
+    width: 100%;
+    position: absolute;
     text-align: center;
 }
 #resultado{
+    position: relative;
+    margin-top: 20px;
+    font-weight: 600;
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
-    height: 500px;
-    color: #8b2323;
-    img{
-        width: 100%;
+    color: white;
+    justify-content: space-around;
+    row-gap: 40px;
+    p{
+        display: inline-block;
+        background-color: white;
+        background-size: cover;
+        color: #292929;
+        margin: 10px;
+        padding: 0px 5px 0px 5px;
+        border-radius: 10px 10px 0px 10px;
     }
 }
 .card{
     background-color: #292929;
-    border: 3px solid #8b1a1a;
+    border: 3px solid white;
+    width: 250px;
+    height: 500px;
+    box-sizing: content-box;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+.cont{
+    position: relative;
+    min-height: 100vh;
+}
+footer{
+    width: 100%;
+    background-color: #292929;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+@keyframes tit{
+    from {
+        transform: translateX(-25%);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
